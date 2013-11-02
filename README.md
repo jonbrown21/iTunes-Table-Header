@@ -2,9 +2,7 @@ iTunes-Table-Header
 ===================
 
 A complete collection of subclasses and classes to make any table view look like that in the iTunes program. Includes custom row alternating colors and highlight colors.
-
 ![ScreenShot](https://raw.github.com/jonbrown21/iTunes-Table-Header/master/iTunesWindow.png)
-
 iTableStyle
 ===================
 A subclass of NSTableView that styles the select color of the rows the behavior of the NSTableView and calculates exactly how many rows to re-draw with the custom color or gradient.
