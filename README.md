@@ -3,7 +3,7 @@ iTunes-Table-Header
 
 A complete collection of subclasses and classes to make any table view look like that in the iTunes program. Includes custom row alternating colors and highlight colors.
 
-[![itunes screenshot](https://github.com/jonbrown21/iTunes-Table-Header/blob/master/iTunes%20Window.png)]
+![ScreenShot](https://github.com/jonbrown21/iTunes-Table-Header/blob/master/iTunes%20Window.png)
 
 iTableStyle
 ===================
