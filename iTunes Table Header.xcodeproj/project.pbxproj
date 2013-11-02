@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCEA069A1824966E004FDEE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA06991824966E004FDEE6 /* Cocoa.framework */; };
+		FCEA06A41824966E004FDEE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCEA06A21824966E004FDEE6 /* InfoPlist.strings */; };
+		FCEA06A61824966E004FDEE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06A51824966E004FDEE6 /* main.m */; };
+		FCEA06AA1824966E004FDEE6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FCEA06A81824966E004FDEE6 /* Credits.rtf */; };
+		FCEA06AD1824966E004FDEE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06AC1824966E004FDEE6 /* AppDelegate.m */; };
+		FCEA06B01824966E004FDEE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEA06AE1824966E004FDEE6 /* MainMenu.xib */; };
+		FCEA06B21824966E004FDEE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA06B11824966E004FDEE6 /* Images.xcassets */; };
+		FCEA06B91824966E004FDEE6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA06B81824966E004FDEE6 /* XCTest.framework */; };
+		FCEA06BA1824966E004FDEE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA06991824966E004FDEE6 /* Cocoa.framework */; };
+		FCEA06C21824966E004FDEE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCEA06C01824966E004FDEE6 /* InfoPlist.strings */; };
+		FCEA06C41824966E004FDEE6 /* iTunes_Table_HeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06C31824966E004FDEE6 /* iTunes_Table_HeaderTests.m */; };
+		FCEA06CF1824996B004FDEE6 /* iHeaderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06CE1824996B004FDEE6 /* iHeaderStyle.m */; };
+		FCEA06D21824A114004FDEE6 /* iTableStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06D11824A114004FDEE6 /* iTableStyle.m */; };
+		FCEA06D51824ABF2004FDEE6 /* iArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06D41824ABF2004FDEE6 /* iArrayController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCEA06BB1824966E004FDEE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEA068E1824966E004FDEE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEA06951824966E004FDEE6;
+			remoteInfo = "iTunes Table Header";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCEA06961824966E004FDEE6 /* iTunes Table Header.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes Table Header.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEA06991824966E004FDEE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FCEA069C1824966E004FDEE6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FCEA069D1824966E004FDEE6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FCEA069E1824966E004FDEE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCEA06A11824966E004FDEE6 /* iTunes Table Header-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunes Table Header-Info.plist"; sourceTree = "<group>"; };
+		FCEA06A31824966E004FDEE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCEA06A51824966E004FDEE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCEA06A71824966E004FDEE6 /* iTunes Table Header-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTunes Table Header-Prefix.pch"; sourceTree = "<group>"; };
+		FCEA06A91824966E004FDEE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FCEA06AB1824966E004FDEE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCEA06AC1824966E004FDEE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCEA06AF1824966E004FDEE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FCEA06B11824966E004FDEE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCEA06B71824966E004FDEE6 /* iTunes Table HeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTunes Table HeaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEA06B81824966E004FDEE6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FCEA06BF1824966E004FDEE6 /* iTunes Table HeaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunes Table HeaderTests-Info.plist"; sourceTree = "<group>"; };
+		FCEA06C11824966E004FDEE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCEA06C31824966E004FDEE6 /* iTunes_Table_HeaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunes_Table_HeaderTests.m; sourceTree = "<group>"; };
+		FCEA06CD1824996B004FDEE6 /* iHeaderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHeaderStyle.h; sourceTree = "<group>"; };
+		FCEA06CE1824996B004FDEE6 /* iHeaderStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHeaderStyle.m; sourceTree = "<group>"; };
+		FCEA06D01824A114004FDEE6 /* iTableStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTableStyle.h; sourceTree = "<group>"; };
+		FCEA06D11824A114004FDEE6 /* iTableStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTableStyle.m; sourceTree = "<group>"; };
+		FCEA06D31824ABF2004FDEE6 /* iArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iArrayController.h; sourceTree = "<group>"; };
+		FCEA06D41824ABF2004FDEE6 /* iArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iArrayController.m; sourceTree = "<group>"; };
+		FCEA06D61824B051004FDEE6 /* iTunes Table Header.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iTunes Table Header.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCEA06931824966E004FDEE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA069A1824966E004FDEE6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEA06B41824966E004FDEE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA06BA1824966E004FDEE6 /* Cocoa.framework in Frameworks */,
+				FCEA06B91824966E004FDEE6 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCEA068D1824966E004FDEE6 = {
+			isa = PBXGroup;
+			children = (
+				FCEA069F1824966E004FDEE6 /* iTunes Table Header */,
+				FCEA06BD1824966E004FDEE6 /* iTunes Table HeaderTests */,
+				FCEA06981824966E004FDEE6 /* Frameworks */,
+				FCEA06971824966E004FDEE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCEA06971824966E004FDEE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06961824966E004FDEE6 /* iTunes Table Header.app */,
+				FCEA06B71824966E004FDEE6 /* iTunes Table HeaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEA06981824966E004FDEE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06991824966E004FDEE6 /* Cocoa.framework */,
+				FCEA06B81824966E004FDEE6 /* XCTest.framework */,
+				FCEA069B1824966E004FDEE6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCEA069B1824966E004FDEE6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA069C1824966E004FDEE6 /* AppKit.framework */,
+				FCEA069D1824966E004FDEE6 /* CoreData.framework */,
+				FCEA069E1824966E004FDEE6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FCEA069F1824966E004FDEE6 /* iTunes Table Header */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06D61824B051004FDEE6 /* iTunes Table Header.entitlements */,
+				FCEA06AB1824966E004FDEE6 /* AppDelegate.h */,
+				FCEA06AC1824966E004FDEE6 /* AppDelegate.m */,
+				FCEA06AE1824966E004FDEE6 /* MainMenu.xib */,
+				FCEA06D01824A114004FDEE6 /* iTableStyle.h */,
+				FCEA06D11824A114004FDEE6 /* iTableStyle.m */,
+				FCEA06CD1824996B004FDEE6 /* iHeaderStyle.h */,
+				FCEA06CE1824996B004FDEE6 /* iHeaderStyle.m */,
+				FCEA06D31824ABF2004FDEE6 /* iArrayController.h */,
+				FCEA06D41824ABF2004FDEE6 /* iArrayController.m */,
+				FCEA06B11824966E004FDEE6 /* Images.xcassets */,
+				FCEA06A01824966E004FDEE6 /* Supporting Files */,
+			);
+			path = "iTunes Table Header";
+			sourceTree = "<group>";
+		};
+		FCEA06A01824966E004FDEE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06A11824966E004FDEE6 /* iTunes Table Header-Info.plist */,
+				FCEA06A21824966E004FDEE6 /* InfoPlist.strings */,
+				FCEA06A51824966E004FDEE6 /* main.m */,
+				FCEA06A71824966E004FDEE6 /* iTunes Table Header-Prefix.pch */,
+				FCEA06A81824966E004FDEE6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCEA06BD1824966E004FDEE6 /* iTunes Table HeaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06C31824966E004FDEE6 /* iTunes_Table_HeaderTests.m */,
+				FCEA06BE1824966E004FDEE6 /* Supporting Files */,
+			);
+			path = "iTunes Table HeaderTests";
+			sourceTree = "<group>";
+		};
+		FCEA06BE1824966E004FDEE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06BF1824966E004FDEE6 /* iTunes Table HeaderTests-Info.plist */,
+				FCEA06C01824966E004FDEE6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCEA06951824966E004FDEE6 /* iTunes Table Header */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEA06C71824966E004FDEE6 /* Build configuration list for PBXNativeTarget "iTunes Table Header" */;
+			buildPhases = (
+				FCEA06921824966E004FDEE6 /* Sources */,
+				FCEA06931824966E004FDEE6 /* Frameworks */,
+				FCEA06941824966E004FDEE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iTunes Table Header";
+			productName = "iTunes Table Header";
+			productReference = FCEA06961824966E004FDEE6 /* iTunes Table Header.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCEA06B61824966E004FDEE6 /* iTunes Table HeaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEA06CA1824966E004FDEE6 /* Build configuration list for PBXNativeTarget "iTunes Table HeaderTests" */;
+			buildPhases = (
+				FCEA06B31824966E004FDEE6 /* Sources */,
+				FCEA06B41824966E004FDEE6 /* Frameworks */,
+				FCEA06B51824966E004FDEE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEA06BC1824966E004FDEE6 /* PBXTargetDependency */,
+			);
+			name = "iTunes Table HeaderTests";
+			productName = "iTunes Table HeaderTests";
+			productReference = FCEA06B71824966E004FDEE6 /* iTunes Table HeaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCEA068E1824966E004FDEE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jon Brown Designs";
+				TargetAttributes = {
+					FCEA06951824966E004FDEE6 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					FCEA06B61824966E004FDEE6 = {
+						TestTargetID = FCEA06951824966E004FDEE6;
+					};
+				};
+			};
+			buildConfigurationList = FCEA06911824966E004FDEE6 /* Build configuration list for PBXProject "iTunes Table Header" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCEA068D1824966E004FDEE6;
+			productRefGroup = FCEA06971824966E004FDEE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCEA06951824966E004FDEE6 /* iTunes Table Header */,
+				FCEA06B61824966E004FDEE6 /* iTunes Table HeaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCEA06941824966E004FDEE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA06A41824966E004FDEE6 /* InfoPlist.strings in Resources */,
+				FCEA06B21824966E004FDEE6 /* Images.xcassets in Resources */,
+				FCEA06AA1824966E004FDEE6 /* Credits.rtf in Resources */,
+				FCEA06B01824966E004FDEE6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEA06B51824966E004FDEE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA06C21824966E004FDEE6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCEA06921824966E004FDEE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA06AD1824966E004FDEE6 /* AppDelegate.m in Sources */,
+				FCEA06D51824ABF2004FDEE6 /* iArrayController.m in Sources */,
+				FCEA06A61824966E004FDEE6 /* main.m in Sources */,
+				FCEA06D21824A114004FDEE6 /* iTableStyle.m in Sources */,
+				FCEA06CF1824996B004FDEE6 /* iHeaderStyle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEA06B31824966E004FDEE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA06C41824966E004FDEE6 /* iTunes_Table_HeaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCEA06BC1824966E004FDEE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEA06951824966E004FDEE6 /* iTunes Table Header */;
+			targetProxy = FCEA06BB1824966E004FDEE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCEA06A21824966E004FDEE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEA06A31824966E004FDEE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FCEA06A81824966E004FDEE6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEA06A91824966E004FDEE6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FCEA06AE1824966E004FDEE6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEA06AF1824966E004FDEE6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FCEA06C01824966E004FDEE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEA06C11824966E004FDEE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCEA06C51824966E004FDEE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FCEA06C61824966E004FDEE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FCEA06C81824966E004FDEE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "iTunes Table Header/iTunes Table Header.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTunes Table Header/iTunes Table Header-Prefix.pch";
+				INFOPLIST_FILE = "iTunes Table Header/iTunes Table Header-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FCEA06C91824966E004FDEE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "iTunes Table Header/iTunes Table Header.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTunes Table Header/iTunes Table Header-Prefix.pch";
+				INFOPLIST_FILE = "iTunes Table Header/iTunes Table Header-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FCEA06CB1824966E004FDEE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunes Table Header.app/Contents/MacOS/iTunes Table Header";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTunes Table Header/iTunes Table Header-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iTunes Table HeaderTests/iTunes Table HeaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FCEA06CC1824966E004FDEE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunes Table Header.app/Contents/MacOS/iTunes Table Header";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTunes Table Header/iTunes Table Header-Prefix.pch";
+				INFOPLIST_FILE = "iTunes Table HeaderTests/iTunes Table HeaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCEA06911824966E004FDEE6 /* Build configuration list for PBXProject "iTunes Table Header" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEA06C51824966E004FDEE6 /* Debug */,
+				FCEA06C61824966E004FDEE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEA06C71824966E004FDEE6 /* Build configuration list for PBXNativeTarget "iTunes Table Header" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEA06C81824966E004FDEE6 /* Debug */,
+				FCEA06C91824966E004FDEE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCEA06CA1824966E004FDEE6 /* Build configuration list for PBXNativeTarget "iTunes Table HeaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEA06CB1824966E004FDEE6 /* Debug */,
+				FCEA06CC1824966E004FDEE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCEA068E1824966E004FDEE6 /* Project object */;
+}
