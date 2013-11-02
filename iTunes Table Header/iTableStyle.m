@@ -23,8 +23,8 @@
     
     NSRange aVisibleRowIndexes = [self rowsInRect:theClipRect];
     NSIndexSet* aSelectedRowIndexes = [self selectedRowIndexes];
-    int aRow = aVisibleRowIndexes.location;
-    int anEndRow = aRow + aVisibleRowIndexes.length;
+    long aRow = aVisibleRowIndexes.location;
+    long anEndRow = aRow + aVisibleRowIndexes.length;
     NSGradient* gradient;
     NSColor* pathColor;
     

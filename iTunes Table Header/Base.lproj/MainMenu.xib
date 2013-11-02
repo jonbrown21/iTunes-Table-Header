@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4511"/>
     </dependencies>
@@ -662,10 +662,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="406" height="418"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP5-3I-Bof">
+                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="SP5-3I-Bof">
                         <rect key="frame" x="0.0" y="32" width="406" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <clipView key="contentView" horizontalHuggingPriority="372" horizontalCompressionResistancePriority="392" ambiguous="YES" misplaced="YES" id="lyg-71-r4K">
+                        <clipView key="contentView" horizontalHuggingPriority="372" horizontalCompressionResistancePriority="392" id="lyg-71-r4K">
                             <rect key="frame" x="0.0" y="17" width="406" height="370"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -753,7 +753,7 @@
                             <rect key="frame" x="0.0" y="1" width="0.0" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" id="LIu-wb-4JH">
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="LIu-wb-4JH">
                             <rect key="frame" x="-16" y="17" width="16" height="0.0"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -762,7 +762,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9K-LN-upW">
+                    <button id="d9K-LN-upW">
                         <rect key="frame" x="9" y="5" width="23" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="+" bezelStyle="texturedRounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="SyA-2d-wBm">
@@ -773,7 +773,7 @@
                             <action selector="add:" target="hma-DP-aVs" id="CmO-UE-vyd"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVy-kO-0HI">
+                    <button id="MVy-kO-0HI">
                         <rect key="frame" x="40" y="5" width="23" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="-" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="0em-JI-onD">
@@ -784,7 +784,7 @@
                             <action selector="remove:" target="hma-DP-aVs" id="cEC-gs-OWf"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-qZ-Atf">
+                    <button id="Zog-qZ-Atf">
                         <rect key="frame" x="355" y="5" width="48" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Save" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="JC3-hk-mp0">
