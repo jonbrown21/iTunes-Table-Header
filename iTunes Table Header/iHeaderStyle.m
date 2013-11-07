@@ -57,7 +57,7 @@
     
     // Draw the column divider.
     [[NSColor lightGrayColor] set];
-    NSRect	_dividerRect = NSMakeRect(cellFrame.origin.x + cellFrame.size.width - -1, 0, 1,cellFrame.size.height);
+    NSRect	_dividerRect = NSMakeRect(cellFrame.origin.x + cellFrame.size.width -1, 0, 1,cellFrame.size.height);
     NSRectFill(_dividerRect);
     
     
