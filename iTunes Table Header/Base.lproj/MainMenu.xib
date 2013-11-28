@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4511"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -654,7 +654,7 @@
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
         <window title="iTunes Style" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="Tqn-ts-UdJ">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="771" y="327" width="406" height="418"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
@@ -664,7 +664,7 @@
                 <subviews>
                     <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="SP5-3I-Bof">
                         <rect key="frame" x="0.0" y="32" width="406" height="387"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" horizontalHuggingPriority="372" horizontalCompressionResistancePriority="392" id="lyg-71-r4K">
                             <rect key="frame" x="0.0" y="17" width="406" height="370"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -749,11 +749,11 @@
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" id="7eT-A6-JEc">
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="7eT-A6-JEc">
                             <rect key="frame" x="0.0" y="1" width="0.0" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="LIu-wb-4JH">
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="LIu-wb-4JH">
                             <rect key="frame" x="-16" y="17" width="16" height="0.0"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -764,7 +764,7 @@
                     </scrollView>
                     <button id="d9K-LN-upW">
                         <rect key="frame" x="9" y="5" width="23" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="+" bezelStyle="texturedRounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="SyA-2d-wBm">
                             <behavior key="behavior" lightByContents="YES"/>
                             <font key="font" metaFont="system" size="20"/>
@@ -775,7 +775,7 @@
                     </button>
                     <button id="MVy-kO-0HI">
                         <rect key="frame" x="40" y="5" width="23" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="-" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="0em-JI-onD">
                             <behavior key="behavior" lightByContents="YES"/>
                             <font key="font" metaFont="system" size="25"/>
@@ -786,7 +786,7 @@
                     </button>
                     <button id="Zog-qZ-Atf">
                         <rect key="frame" x="355" y="5" width="48" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Save" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="JC3-hk-mp0">
                             <behavior key="behavior" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -795,6 +795,32 @@
                             <action selector="save:" target="Nyb-iz-KVe" id="nwG-fZ-Ked"/>
                         </connections>
                     </button>
+                    <customView id="yDG-vl-2ZJ">
+                        <rect key="frame" x="385" y="402" width="21" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <imageView id="bTZ-Ag-CNq">
+                                <rect key="frame" x="7" y="4" width="8" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="NSAddTemplate" id="T2L-jK-sjQ"/>
+                            </imageView>
+                            <popUpButton id="RAX-le-8aS">
+                                <rect key="frame" x="-33" y="-2" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" transparent="YES" imageScaling="proportionallyDown" inset="2" id="alh-1y-nXC">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" title="OtherViews" id="DVG-GI-YCp">
+                                        <items>
+                                            <menuItem title="Item 1" id="ahj-NY-Ze4"/>
+                                            <menuItem title="Item 2" id="vse-HH-UfY"/>
+                                            <menuItem title="Item 3" id="eRR-Ul-UPj"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                        </subviews>
+                    </customView>
                 </subviews>
             </view>
             <contentBorderThickness minY="32"/>
@@ -810,4 +836,7 @@
         </arrayController>
         <userDefaultsController representsSharedInstance="YES" id="Nyb-iz-KVe"/>
     </objects>
+    <resources>
+        <image name="NSAddTemplate" width="8" height="8"/>
+    </resources>
 </document>
