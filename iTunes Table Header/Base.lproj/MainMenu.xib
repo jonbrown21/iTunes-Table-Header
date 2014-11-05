@@ -679,7 +679,7 @@
                                     <color key="backgroundColor" red="0.84313725490196079" green="0.86274509803921573" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="gridColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn width="111.41015625" minWidth="40" maxWidth="1000" id="ISE-Gz-XwA">
+                                        <tableColumn width="111.6640625" minWidth="40" maxWidth="1000" id="ISE-Gz-XwA">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Artist">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -696,26 +696,7 @@
                                                 <binding destination="hma-DP-aVs" name="value" keyPath="arrangedObjects.name" id="Bzc-uc-XOB"/>
                                             </connections>
                                         </tableColumn>
-                                        <tableColumn width="62" minWidth="40" maxWidth="1000" id="8jC-ha-P6i">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Rating">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
-                                            </tableHeaderCell>
-                                            <levelIndicatorCell key="dataCell" lineBreakMode="truncatingTail" editable="YES" state="on" alignment="left" doubleValue="5" maxValue="5" warningValue="3" criticalValue="5" levelIndicatorStyle="rating" id="3z7-8f-Gif">
-                                                <font key="font" metaFont="system"/>
-                                            </levelIndicatorCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                            <connections>
-                                                <binding destination="hma-DP-aVs" name="value" keyPath="arrangedObjects.rating" id="IiB-Sg-xLm">
-                                                    <dictionary key="options">
-                                                        <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
-                                                    </dictionary>
-                                                </binding>
-                                            </connections>
-                                        </tableColumn>
-                                        <tableColumn width="113.8125" minWidth="10" maxWidth="3.4028234663852886e+38" id="R1a-YJ-nBm">
+                                        <tableColumn width="111.2265625" minWidth="10" maxWidth="3.4028234663852886e+38" id="R1a-YJ-nBm">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Time">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -731,7 +712,7 @@
                                                 <binding destination="hma-DP-aVs" name="value" keyPath="arrangedObjects.time" id="ZPv-3S-1jr"/>
                                             </connections>
                                         </tableColumn>
-                                        <tableColumn width="106.66796875" minWidth="10" maxWidth="3.4028234663852886e+38" id="Knb-tZ-lex">
+                                        <tableColumn width="104.77734375" minWidth="10" maxWidth="3.4028234663852886e+38" id="Knb-tZ-lex">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Track">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -745,6 +726,25 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <connections>
                                                 <binding destination="hma-DP-aVs" name="value" keyPath="arrangedObjects.track" id="Of7-Pb-jao"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn width="66" minWidth="40" maxWidth="1000" id="8jC-ha-P6i">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Rating">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <levelIndicatorCell key="dataCell" lineBreakMode="truncatingTail" editable="YES" state="on" alignment="left" doubleValue="5" maxValue="5" warningValue="3" criticalValue="5" levelIndicatorStyle="relevancy" id="3z7-8f-Gif">
+                                                <font key="font" metaFont="system"/>
+                                            </levelIndicatorCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="hma-DP-aVs" name="value" keyPath="arrangedObjects.rating" id="IiB-Sg-xLm">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </tableColumn>
                                     </tableColumns>
