@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
                 <menuItem title="iTunes Table Header" id="56">
@@ -670,7 +671,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="MBA-UX-rYJ" id="qjh-38-NSk" customClass="iTableStyle">
-                                    <rect key="frame" x="0.0" y="0.0" width="406" height="370"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="406" height="19"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" red="0.84313725490196079" green="0.86274509803921573" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
@@ -712,7 +713,7 @@
                                                 </binding>
                                             </connections>
                                         </tableColumn>
-                                        <tableColumn width="73.77734375" minWidth="10" maxWidth="3.4028234663852886e+38" id="R1a-YJ-nBm">
+                                        <tableColumn width="113.8125" minWidth="10" maxWidth="3.4028234663852886e+38" id="R1a-YJ-nBm">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Time">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -728,7 +729,7 @@
                                                 <binding destination="hma-DP-aVs" name="value" keyPath="arrangedObjects.time" id="ZPv-3S-1jr"/>
                                             </connections>
                                         </tableColumn>
-                                        <tableColumn width="146.66796875" minWidth="10" maxWidth="3.4028234663852886e+38" id="Knb-tZ-lex">
+                                        <tableColumn width="106.66796875" minWidth="10" maxWidth="3.4028234663852886e+38" id="Knb-tZ-lex">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="  Track">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -750,11 +751,9 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="7eT-A6-JEc">
-                            <rect key="frame" x="0.0" y="1" width="0.0" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="LIu-wb-4JH">
-                            <rect key="frame" x="-16" y="17" width="16" height="0.0"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" id="MBA-UX-rYJ">
@@ -763,9 +762,9 @@
                         </tableHeaderView>
                     </scrollView>
                     <button id="d9K-LN-upW">
-                        <rect key="frame" x="9" y="5" width="23" height="25"/>
+                        <rect key="frame" x="6" y="3" width="23" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="+" bezelStyle="texturedRounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="SyA-2d-wBm">
+                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" alternateImage="NSAddTemplate" imageScaling="proportionallyDown" inset="2" id="SyA-2d-wBm">
                             <behavior key="behavior" lightByContents="YES"/>
                             <font key="font" metaFont="system" size="20"/>
                         </buttonCell>
@@ -774,9 +773,9 @@
                         </connections>
                     </button>
                     <button id="MVy-kO-0HI">
-                        <rect key="frame" x="40" y="5" width="23" height="25"/>
+                        <rect key="frame" x="32" y="3" width="23" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="-" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="0em-JI-onD">
+                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" alternateImage="NSRemoveTemplate" imageScaling="proportionallyDown" inset="2" id="0em-JI-onD">
                             <behavior key="behavior" lightByContents="YES"/>
                             <font key="font" metaFont="system" size="25"/>
                         </buttonCell>
@@ -785,7 +784,7 @@
                         </connections>
                     </button>
                     <button id="Zog-qZ-Atf">
-                        <rect key="frame" x="355" y="5" width="48" height="25"/>
+                        <rect key="frame" x="355" y="4" width="48" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="roundTextured" title="Save" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="JC3-hk-mp0">
                             <behavior key="behavior" lightByContents="YES"/>
@@ -795,35 +794,10 @@
                             <action selector="save:" target="Nyb-iz-KVe" id="nwG-fZ-Ked"/>
                         </connections>
                     </button>
-                    <customView id="yDG-vl-2ZJ">
-                        <rect key="frame" x="385" y="402" width="21" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <imageView id="bTZ-Ag-CNq">
-                                <rect key="frame" x="7" y="4" width="8" height="8"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="NSAddTemplate" id="T2L-jK-sjQ"/>
-                            </imageView>
-                            <popUpButton id="RAX-le-8aS">
-                                <rect key="frame" x="-33" y="-2" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" transparent="YES" imageScaling="proportionallyDown" inset="2" id="alh-1y-nXC">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
-                                    <menu key="menu" title="OtherViews" id="DVG-GI-YCp">
-                                        <items>
-                                            <menuItem title="Item 1" id="ahj-NY-Ze4"/>
-                                            <menuItem title="Item 2" id="vse-HH-UfY"/>
-                                            <menuItem title="Item 3" id="eRR-Ul-UPj"/>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
-                            </popUpButton>
-                        </subviews>
-                    </customView>
                 </subviews>
             </view>
             <contentBorderThickness minY="32"/>
+            <point key="canvasLocation" x="236" y="275"/>
         </window>
         <arrayController id="hma-DP-aVs" userLabel="Artist Array Controller" customClass="iArrayController">
             <connections>
@@ -838,5 +812,6 @@
     </objects>
     <resources>
         <image name="NSAddTemplate" width="8" height="8"/>
+        <image name="NSRemoveTemplate" width="8" height="8"/>
     </resources>
 </document>
