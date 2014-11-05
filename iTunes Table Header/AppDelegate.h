@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate>
 {
     IBOutlet NSTableView *tableView;
+    IBOutlet NSTableView* tableView_;
+    IBOutlet NSArrayController* arrayController_;
 }
 
 @property (assign) IBOutlet NSWindow *window;

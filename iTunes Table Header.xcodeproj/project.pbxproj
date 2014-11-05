@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC575ECA1A09C06F003D03DC /* iTableColumnHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC575EC91A09C06F003D03DC /* iTableColumnHeaderCell.m */; };
 		FCEA069A1824966E004FDEE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA06991824966E004FDEE6 /* Cocoa.framework */; };
 		FCEA06A41824966E004FDEE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCEA06A21824966E004FDEE6 /* InfoPlist.strings */; };
 		FCEA06A61824966E004FDEE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEA06A51824966E004FDEE6 /* main.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC575EC81A09C06F003D03DC /* iTableColumnHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTableColumnHeaderCell.h; sourceTree = "<group>"; };
+		FC575EC91A09C06F003D03DC /* iTableColumnHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTableColumnHeaderCell.m; sourceTree = "<group>"; };
 		FC7D9D73182B44AD003D072C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
 		FCEA06961824966E004FDEE6 /* iTunes Table Header.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes Table Header.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEA06991824966E004FDEE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -84,6 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC575EC71A09C04F003D03DC /* 10.9 */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA06CD1824996B004FDEE6 /* iHeaderStyle.h */,
+				FCEA06CE1824996B004FDEE6 /* iHeaderStyle.m */,
+			);
+			name = 10.9;
+			sourceTree = "<group>";
+		};
+		FC575ECB1A09C077003D03DC /* 10.10 */ = {
+			isa = PBXGroup;
+			children = (
+				FC575EC81A09C06F003D03DC /* iTableColumnHeaderCell.h */,
+				FC575EC91A09C06F003D03DC /* iTableColumnHeaderCell.m */,
+			);
+			name = 10.10;
+			sourceTree = "<group>";
+		};
 		FCEA068D1824966E004FDEE6 = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +147,14 @@
 		FCEA069F1824966E004FDEE6 /* iTunes Table Header */ = {
 			isa = PBXGroup;
 			children = (
+				FC575EC71A09C04F003D03DC /* 10.9 */,
+				FC575ECB1A09C077003D03DC /* 10.10 */,
 				FCEA06D61824B051004FDEE6 /* iTunes Table Header.entitlements */,
 				FCEA06AB1824966E004FDEE6 /* AppDelegate.h */,
 				FCEA06AC1824966E004FDEE6 /* AppDelegate.m */,
 				FCEA06AE1824966E004FDEE6 /* MainMenu.xib */,
 				FCEA06D01824A114004FDEE6 /* iTableStyle.h */,
 				FCEA06D11824A114004FDEE6 /* iTableStyle.m */,
-				FCEA06CD1824996B004FDEE6 /* iHeaderStyle.h */,
-				FCEA06CE1824996B004FDEE6 /* iHeaderStyle.m */,
 				FCEA06D31824ABF2004FDEE6 /* iArrayController.h */,
 				FCEA06D41824ABF2004FDEE6 /* iArrayController.m */,
 				FCEA06B11824966E004FDEE6 /* Images.xcassets */,
@@ -278,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCEA06AD1824966E004FDEE6 /* AppDelegate.m in Sources */,
+				FC575ECA1A09C06F003D03DC /* iTableColumnHeaderCell.m in Sources */,
 				FCEA06D51824ABF2004FDEE6 /* iArrayController.m in Sources */,
 				FCEA06A61824966E004FDEE6 /* main.m in Sources */,
 				FCEA06D21824A114004FDEE6 /* iTableStyle.m in Sources */,

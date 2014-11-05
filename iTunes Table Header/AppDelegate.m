@@ -7,9 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "iHeaderStyle.h"
+//#import "iHeaderStyle.h"
+#import "iTableColumnHeaderCell.h"
+#import "iArrayController.h"
 
 @implementation AppDelegate
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -27,16 +30,33 @@
     NSEnumerator *cols = [columns objectEnumerator];
     NSTableColumn *col = nil;
     
-    iHeaderStyle *iHeaderCell;
-    
-    while (col = [cols nextObject]) {
-        iHeaderCell = [[iHeaderStyle alloc]
-                       initTextCell:[[col headerCell] stringValue]];
-        [col setHeaderCell:iHeaderCell];
-        [iHeaderCell release];
-    }
+    NSRect frame_head = tableView.headerView.frame;
+    frame_head.size.height = 20;
+    tableView.headerView.frame = frame_head;
 }
 
+#pragma mark -
+#pragma mark NSTableViewDelegate
+- (void)tableView:(NSTableView *)tableView didClickTableColumn:(NSTableColumn *)tableColumn
+{
+    iTableColumnHeaderCell* cell = nil;
+    BOOL ascending;
+    NSInteger priority;
+    
+    for (NSTableColumn* column in [tableView_ tableColumns]) {
+        
+        cell  = (iTableColumnHeaderCell*)[column headerCell];
+        
+        if (column == tableColumn) {
+            ascending = [[[arrayController_ sortDescriptors] objectAtIndex:0] ascending];
+            priority = 0;
+        } else {
+            priority = 1;
+        }
+        
+        [cell setSortAscending:ascending priority:priority];
+    }
+}
 
 
 

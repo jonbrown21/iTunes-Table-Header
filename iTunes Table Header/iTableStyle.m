@@ -7,8 +7,30 @@
 //
 
 #import "iTableStyle.h"
+#import "iTableColumnHeaderCell.h"
 
 @implementation iTableStyle
+
+- (void)_setupHeaderCell
+{
+    for (NSTableColumn* column in [self tableColumns]) {
+        NSTableHeaderCell* cell = [column headerCell];
+        iTableColumnHeaderCell* newCell = [[iTableColumnHeaderCell alloc] initWithCell:cell];
+        [column setHeaderCell:newCell];
+    }
+    
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self _setupHeaderCell];
+    }
+    return self;
+}
+
 
 - (void)highlightSelectionInClipRect:(NSRect)theClipRect
 {

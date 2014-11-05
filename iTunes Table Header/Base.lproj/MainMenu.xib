@@ -649,7 +649,9 @@
         </menu>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="arrayController_" destination="hma-DP-aVs" id="zmC-6c-9f3"/>
                 <outlet property="tableView" destination="qjh-38-NSk" id="qLt-hO-hod"/>
+                <outlet property="tableView_" destination="qjh-38-NSk" id="tMC-sY-iSq"/>
                 <outlet property="window" destination="Tqn-ts-UdJ" id="mIe-CW-JZh"/>
             </connections>
         </customObject>
@@ -746,6 +748,9 @@
                                             </connections>
                                         </tableColumn>
                                     </tableColumns>
+                                    <connections>
+                                        <outlet property="delegate" destination="494" id="6vS-ev-ICI"/>
+                                    </connections>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
